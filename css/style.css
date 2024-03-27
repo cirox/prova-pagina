@@ -19,7 +19,7 @@ p, h1, h2, h3, h4, h5, h6, ul, ol, li {
     padding: 0;
 }
 
-h1, h2 {
+header, h1, h2, footer {
     font-family: "Switzer", sans-serif;
 }
 
@@ -29,7 +29,6 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 0 20px;
-    font-family: "Switzer", sans-serif;
 }
 
 nav ul {
