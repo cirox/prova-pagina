@@ -1,0 +1,139 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000000;
+    color: #fff;
+    font-family: 'Rowan', serif;   
+    margin: 0;
+    
+}
+
+img {
+    max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6, ul, ol, li {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    font-family: "Switzer", sans-serif;
+}
+
+header {
+    max-width: 1000px;
+    margin: 48px auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-family: "Switzer", sans-serif;
+}
+
+nav ul {
+    display: flex;
+    list-style-type: none;
+    gap: 16px;
+}
+
+nav ul a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+nav ul a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+
+section.info {
+    max-width: 1000px;
+    margin: 64px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 16px;
+    padding: 0 20px;
+}
+
+section.info h1 {
+    font-size: 64px;
+    line-height: 1.1;
+}
+
+section.colore-primario {
+    background-color: #7E56C9;
+    padding: 48px 20px;
+}
+
+section.colore-secondario {
+    background-color: #111;
+    padding: 48px 20px;
+}
+
+section.colore-primario div.container, section.colore-secondario div.container {
+    max-width: 1000px;
+    margin: 48px auto;
+    display: flex;
+    gap: 72px;
+}
+
+section.colore-secondario div.container, section.colore-primario div.container {
+    flex-direction: row-reverse;
+}
+
+section.colore-primario .container .text, section.colore-secondario .container .text {
+    width: 66%;
+}
+
+section.colore-primario .container .image, section.colore-secondario .container .image {
+    width: 33%;
+}
+
+.text h2 {
+    margin-bottom: 1.5rem;
+}
+
+.text p {
+    font-size: 20px;
+    line-height: 1.3;
+    margin-bottom: 1.3rem;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px 20px;
+}
+
+@media (max-width:600px) {
+    section.info {
+        grid-template-columns: 1fr;
+    }
+
+    section.info h1 {
+        font-size: 42px;
+    }
+
+    section.colore-primario div.container, section.colore-secondario div.container {
+        flex-direction: column;
+    }
+
+    section.colore-primario .container .text, section.colore-secondario .container .text {
+        width: 100%;
+    }
+    
+    section.colore-primario .container .image, section.colore-secondario .container .image {
+        width: 100%;
+    }
+
+    .text p {
+        font-size: 18px;
+        line-height: 1.3;
+        margin-bottom: 1.3rem;
+    }
+}
+
+
+
